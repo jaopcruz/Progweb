@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Exercício 3 - Programação Web">
+    <meta name="keywords" content="HTML, Exercício, Programação Web">
+    <meta name="author" content="Joao Pedro da Cruz Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Programação Web</title>
+
+    <style>
+        table, td, th {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        input {
+            margin: 5px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Exercício 3 - João Pedro da Cruz Silva de Camargo</h1>
+    </header>
+    <section>
+        <h2>Formulário</h2>
+        <form>
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" pattern=""
+            placeholder="Insira seu nome">
+
+            <br><br>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"
+            placeholder="000.000.000-00">
+
+            <br><br>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" pattern="[0-9]{5}-[0-9]{3}"
+            placeholder="00000-000">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" pattern=""
+            placeholder="example@email.net">
+
+            <br><br>
+
+            <label for="datahora">Data e hora:</label>
+            <input type="datetime-local" id="datahora">
+
+            <br><br>
+
+            <input type="Submit" value="Enviar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Tabela de dados</h2>
+        <table >
+            <tr>
+                <th>Categoria</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Jogos eletrônicos</td>
+                <td>Mario Party</td>
+                <td>R$ 159,99</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>The Legend of Zelda</td>
+                <td>R$ 350,00</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Castle of Illusion</td>
+                <td>R$ 259,90</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Brinquedo</td>
+                <td>Carrinhos - Hot Wheels - Pacote com 5 Carros</td>
+                <td>R$ 74,99</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Lego Classic - Caixa Pequena</td>
+                <td>R$ 199,99</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>R$ 1.394,66</td>
+                <td>8</td>
+            </tr>
+            
+        </table>
+    </section>
+
+    <section>
+        <h2>Listas</h2>
+        <h3>Navegadores mais populares no Brasil em 2024</h3>
+        <ol>
+            <li>Chrome (72,37%)</li>
+            <li>Opera (10,01%)</li>
+            <li>Edge (8,75%)</li>
+            <li>Firefox (5,23%)</li>
+            <li>Safari (1,46%)</li>
+        </ol>
+
+        <h3>Navegadores mais populares no Brasil em 2024</h3>
+        <ul>
+            <li>Chrome (72,37%)</li>
+            <li>Opera (10,01%)</li>
+            <li>Edge (8,75%)</li>
+            <li>Firefox (5,23%)</li>
+            <li>Safari (1,46%)</li>
+        </ul>
+
+        <h3>Navegadores mais populares no Brasil em 2024</h3>
+        <dl>
+            <dt>SGML</dt>
+            <dd>Standard Generalized Markup Language é uma linguagem de marcação padrão, também sendo uma metalinguagem de marcação para definição de outras linguagens de marcação.</dd>
+
+            <dt>XML</dt>
+            <dd>Extensible Markup Language (Linguagem de Marcação Extensível) é uma de linguagem de marcação derivada da linguagem SGML, utilizada para compartilhamento fácil de informações.</dd>
+
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language (Linguagem de Marcação de Hipertexto) é uma de linguagem de marcação derivada da linguagem SGML criada para conteúdos hipertexto.</dd>
+        </dl>
+    </section>
+</body>
+
+</html>
